@@ -1,6 +1,15 @@
 {
 	"Name": "skrubslayer.mp_towers",
 	"Description": "literally the second best titanfall map ever created",
-	"Version": "0.0.2",
-	"RequiredOnClient": true
+	"Version": "0.0.3",
+	"RequiredOnClient": true,
+	"Scripts": [
+	    {
+	        "Path": "DisableImpactMarks.nut",
+	        "RunOn": "CLIENT && MAP_mp_towers",
+		"ClientCallback": {
+			"After": "DisableImpactMarks"
+         	}
+	    }
+	],
 }
